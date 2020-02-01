@@ -1,0 +1,40 @@
+body{font-size: 50px; font-family: "나눔고딕"; background-color: #EFFDFC;}
+button{font-size: 50px; font-family: "나눔고딕";}
+table, tr, td{border: solid; text-align: center;}
+.coloring{
+  transition:background-color 0.3s ease-in-out;
+}
+.coloring:hover{
+  background-color: yellow;
+}
+.box{
+  font-size: 100px;
+  text-align: center;
+  color: pink;
+  width: 135px;
+  height: 135px;
+  background-color: red;
+  animation: 2s turning infinite ease-in-out;
+}
+.title{
+  width : 700px;
+  text-align: center;
+  font-size: 100px;
+  margin: 30px;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 135px 1fr;
+}
+
+@keyframes turning {
+  0%{
+    transform: none;
+  }
+  50%{
+    transform: rotate(1turn) scale(.5, .5);
+  }
+  100%{
+    transform: rotate(2turn) scale(1,1);
+  }
+}
